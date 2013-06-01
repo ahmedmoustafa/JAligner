@@ -1,4 +1,2 @@
-# JAligner
-<p>
-JAligner is an open source Java implementation of the Smith-Waterman algorithm with Gotoh's improvement for biological local pairwise sequence alignment with the affine gap penalty model.
-</p>
+**JAligner** is an open-source Java implementation of the [Needleman–Wunsch](http://en.wikipedia.org/wiki/Needleman-Wunsch_algorithm) and [Smith-Waterman](http://en.wikipedia.org/wiki/Smith-Waterman_algorithm) algorithms for biological pairwise [sequence alignment](http://en.wikipedia.org/wiki/Sequence_alignment) with the affine gap penalty model.
+
