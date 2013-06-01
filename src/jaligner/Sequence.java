@@ -240,8 +240,9 @@ public class Sequence implements Serializable {
     /**
      * Returns the sequence id and the sequence string
      * 
-     * @return Returns the sequence id and the sequence string
+     * @return sequence id and the sequence string
      */
+        @Override
     public String toString() {
         return id + Commons.TAB + sequence;
     }

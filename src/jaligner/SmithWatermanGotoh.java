@@ -121,8 +121,8 @@ public final class SmithWatermanGotoh {
 		if (s2.getId() != null) {
 			alignment.setName2(s2.getId());
 		}
-		logger.info("Finished in " + (System.currentTimeMillis() - start)
-				+ " milliseconds");
+                String msg = "Finished in " + (System.currentTimeMillis() - start) + " milliseconds";
+		logger.info(msg);
 		return alignment;
 	}
 
@@ -220,8 +220,8 @@ public final class SmithWatermanGotoh {
 				}
 			}
 		}
-		logger.info("Finished in " + (System.currentTimeMillis() - start)
-				+ " milliseconds");
+                String msg = "Finished in " + (System.currentTimeMillis() - start) + " milliseconds";
+		logger.info(msg);
 		return cell;
 	}
 
@@ -332,8 +332,8 @@ public final class SmithWatermanGotoh {
 		alignment.setGaps(gaps);
 		alignment.setSimilarity(similarity);
 
-		logger.info("Finished in " + (System.currentTimeMillis() - start)
-				+ " milliseconds");
+                String msg = "Finished in " + (System.currentTimeMillis() - start) + " milliseconds";
+		logger.info(msg);
 		return alignment;
 	}
 
