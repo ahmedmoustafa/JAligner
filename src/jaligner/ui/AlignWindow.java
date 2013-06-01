@@ -233,7 +233,9 @@ public class AlignWindow extends javax.swing.JFrame implements ClipboardListener
         this.setSize(WINDOW_WIDTH, WINDOW_HEIGHT);
     }
     
-    private void initComponents() {//GEN-BEGIN:initComponents
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    private void initComponents() {
+
         jPopup = new javax.swing.JPopupMenu();
         jPopupOpen = new javax.swing.JMenuItem();
         jPopupSave = new javax.swing.JMenuItem();
@@ -319,7 +321,6 @@ public class AlignWindow extends javax.swing.JFrame implements ClipboardListener
                 jPopupOpenActionPerformed(evt);
             }
         });
-
         jPopup.add(jPopupOpen);
 
         jPopupSave.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_S, java.awt.event.InputEvent.CTRL_MASK));
@@ -331,9 +332,7 @@ public class AlignWindow extends javax.swing.JFrame implements ClipboardListener
                 jPopupSaveActionPerformed(evt);
             }
         });
-
         jPopup.add(jPopupSave);
-
         jPopup.add(jPopupSeparator1);
 
         jPopupCut.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_X, java.awt.event.InputEvent.CTRL_MASK));
@@ -345,7 +344,6 @@ public class AlignWindow extends javax.swing.JFrame implements ClipboardListener
                 jPopupCutActionPerformed(evt);
             }
         });
-
         jPopup.add(jPopupCut);
 
         jPopupCopy.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_C, java.awt.event.InputEvent.CTRL_MASK));
@@ -357,7 +355,6 @@ public class AlignWindow extends javax.swing.JFrame implements ClipboardListener
                 jPopupCopyActionPerformed(evt);
             }
         });
-
         jPopup.add(jPopupCopy);
 
         jPopupPaste.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_V, java.awt.event.InputEvent.CTRL_MASK));
@@ -369,7 +366,6 @@ public class AlignWindow extends javax.swing.JFrame implements ClipboardListener
                 jPopupPasteActionPerformed(evt);
             }
         });
-
         jPopup.add(jPopupPaste);
 
         jPopupDelete.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_DELETE, 0));
@@ -381,9 +377,7 @@ public class AlignWindow extends javax.swing.JFrame implements ClipboardListener
                 jPopupDeleteActionPerformed(evt);
             }
         });
-
         jPopup.add(jPopupDelete);
-
         jPopup.add(jPopupSeparator2);
 
         jPopupPrint.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_P, java.awt.event.InputEvent.CTRL_MASK));
@@ -395,9 +389,7 @@ public class AlignWindow extends javax.swing.JFrame implements ClipboardListener
                 jPopupPrintActionPerformed(evt);
             }
         });
-
         jPopup.add(jPopupPrint);
-
         jPopup.add(jPopupSeparator3);
 
         jPopupSelectAll.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_A, java.awt.event.InputEvent.CTRL_MASK));
@@ -408,12 +400,11 @@ public class AlignWindow extends javax.swing.JFrame implements ClipboardListener
                 jPopupSelectAllActionPerformed(evt);
             }
         });
-
         jPopup.add(jPopupSelectAll);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
-        setTitle("JAligner - biological sequence alignment <https://github.com/ahmedmoustafa/JAligner>");
-        setName("AlignWindow");
+        setTitle("JAligner - biological pairwise sequence alignment <http://jaligner.sf.net>");
+        setName("AlignWindow"); // NOI18N
         addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowClosing(java.awt.event.WindowEvent evt) {
                 exitForm(evt);
@@ -429,7 +420,6 @@ public class AlignWindow extends javax.swing.JFrame implements ClipboardListener
                 jButtonOpenActionPerformed(evt);
             }
         });
-
         jToolBar.add(jButtonOpen);
 
         jButtonSave.setIcon(ToolbarIcons.SAVE);
@@ -441,7 +431,6 @@ public class AlignWindow extends javax.swing.JFrame implements ClipboardListener
                 jButtonSaveActionPerformed(evt);
             }
         });
-
         jToolBar.add(jButtonSave);
 
         jButtonCut.setIcon(ToolbarIcons.CUT);
@@ -453,7 +442,6 @@ public class AlignWindow extends javax.swing.JFrame implements ClipboardListener
                 jButtonCutActionPerformed(evt);
             }
         });
-
         jToolBar.add(jButtonCut);
 
         jButtonCopy.setIcon(ToolbarIcons.COPY);
@@ -465,7 +453,6 @@ public class AlignWindow extends javax.swing.JFrame implements ClipboardListener
                 jButtonCopyActionPerformed(evt);
             }
         });
-
         jToolBar.add(jButtonCopy);
 
         jButtonPaste.setIcon(ToolbarIcons.PASTE);
@@ -477,7 +464,6 @@ public class AlignWindow extends javax.swing.JFrame implements ClipboardListener
                 jButtonPasteActionPerformed(evt);
             }
         });
-
         jToolBar.add(jButtonPaste);
 
         jButtonDelete.setIcon(ToolbarIcons.DELETE);
@@ -489,7 +475,6 @@ public class AlignWindow extends javax.swing.JFrame implements ClipboardListener
                 jButtonDeleteActionPerformed(evt);
             }
         });
-
         jToolBar.add(jButtonDelete);
 
         jButtonPrint.setIcon(ToolbarIcons.PRINT);
@@ -501,7 +486,6 @@ public class AlignWindow extends javax.swing.JFrame implements ClipboardListener
                 jButtonPrintActionPerformed(evt);
             }
         });
-
         jToolBar.add(jButtonPrint);
 
         jButtonExit.setIcon(ToolbarIcons.CLOSE);
@@ -513,25 +497,23 @@ public class AlignWindow extends javax.swing.JFrame implements ClipboardListener
                 jButtonExitActionPerformed(evt);
             }
         });
-
         jToolBar.add(jButtonExit);
 
         getContentPane().add(jToolBar, java.awt.BorderLayout.NORTH);
 
         jSplitPaneBody.setOrientation(javax.swing.JSplitPane.VERTICAL_SPLIT);
         jSplitPaneBody.setOneTouchExpandable(true);
+
         jSplitPaneIO.setOneTouchExpandable(true);
+
         jSplitPaneSequences.setOrientation(javax.swing.JSplitPane.VERTICAL_SPLIT);
         jSplitPaneSequences.setOneTouchExpandable(true);
+
         jPanelSequence1.setLayout(new java.awt.BorderLayout());
 
         jScrollPaneSequence1.setPreferredSize(new java.awt.Dimension(400, 50));
-        jTextAreaSequence1.setFont(new java.awt.Font("DialogInput", 0, 12));
-        jTextAreaSequence1.addFocusListener(new java.awt.event.FocusAdapter() {
-            public void focusGained(java.awt.event.FocusEvent evt) {
-                jTextAreaSequence1FocusGained(evt);
-            }
-        });
+
+        jTextAreaSequence1.setFont(new java.awt.Font("Courier", 0, 12)); // NOI18N
         jTextAreaSequence1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jTextAreaSequence1MouseClicked(evt);
@@ -542,7 +524,11 @@ public class AlignWindow extends javax.swing.JFrame implements ClipboardListener
                 jTextAreaSequence1CaretUpdate(evt);
             }
         });
-
+        jTextAreaSequence1.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                jTextAreaSequence1FocusGained(evt);
+            }
+        });
         jScrollPaneSequence1.setViewportView(jTextAreaSequence1);
 
         jPanelSequence1.add(jScrollPaneSequence1, java.awt.BorderLayout.CENTER);
@@ -554,7 +540,6 @@ public class AlignWindow extends javax.swing.JFrame implements ClipboardListener
                 jRadioButtonSequence1ActionPerformed(evt);
             }
         });
-
         jPanelSequence1.add(jRadioButtonSequence1, java.awt.BorderLayout.NORTH);
 
         jSplitPaneSequences.setTopComponent(jPanelSequence1);
@@ -562,12 +547,8 @@ public class AlignWindow extends javax.swing.JFrame implements ClipboardListener
         jPanelSequence2.setLayout(new java.awt.BorderLayout());
 
         jScrollPaneSequence2.setPreferredSize(new java.awt.Dimension(400, 50));
-        jTextAreaSequence2.setFont(new java.awt.Font("DialogInput", 0, 12));
-        jTextAreaSequence2.addFocusListener(new java.awt.event.FocusAdapter() {
-            public void focusGained(java.awt.event.FocusEvent evt) {
-                jTextAreaSequence2FocusGained(evt);
-            }
-        });
+
+        jTextAreaSequence2.setFont(new java.awt.Font("Courier", 0, 12)); // NOI18N
         jTextAreaSequence2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jTextAreaSequence2MouseClicked(evt);
@@ -578,7 +559,11 @@ public class AlignWindow extends javax.swing.JFrame implements ClipboardListener
                 jTextAreaSequence2CaretUpdate(evt);
             }
         });
-
+        jTextAreaSequence2.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                jTextAreaSequence2FocusGained(evt);
+            }
+        });
         jScrollPaneSequence2.setViewportView(jTextAreaSequence2);
 
         jPanelSequence2.add(jScrollPaneSequence2, java.awt.BorderLayout.CENTER);
@@ -590,7 +575,6 @@ public class AlignWindow extends javax.swing.JFrame implements ClipboardListener
                 jRadioButtonSequence2ActionPerformed(evt);
             }
         });
-
         jPanelSequence2.add(jRadioButtonSequence2, java.awt.BorderLayout.NORTH);
 
         jSplitPaneSequences.setBottomComponent(jPanelSequence2);
@@ -606,18 +590,13 @@ public class AlignWindow extends javax.swing.JFrame implements ClipboardListener
                 jRadioButtonAlignmentActionPerformed(evt);
             }
         });
-
         jPanelAlignment.add(jRadioButtonAlignment, java.awt.BorderLayout.NORTH);
 
         jScrollPaneAlignment.setPreferredSize(new java.awt.Dimension(400, 50));
+
         jTextAreaAlignment.setEditable(false);
-        jTextAreaAlignment.setFont(new java.awt.Font("DialogInput", 0, 12));
+        jTextAreaAlignment.setFont(new java.awt.Font("Courier", 0, 12)); // NOI18N
         jTextAreaAlignment.setTabSize(0);
-        jTextAreaAlignment.addFocusListener(new java.awt.event.FocusAdapter() {
-            public void focusGained(java.awt.event.FocusEvent evt) {
-                jTextAreaAlignmentFocusGained(evt);
-            }
-        });
         jTextAreaAlignment.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jTextAreaAlignmentMouseClicked(evt);
@@ -628,7 +607,11 @@ public class AlignWindow extends javax.swing.JFrame implements ClipboardListener
                 jTextAreaAlignmentCaretUpdate(evt);
             }
         });
-
+        jTextAreaAlignment.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                jTextAreaAlignmentFocusGained(evt);
+            }
+        });
         jScrollPaneAlignment.setViewportView(jTextAreaAlignment);
 
         jPanelAlignment.add(jScrollPaneAlignment, java.awt.BorderLayout.CENTER);
@@ -646,16 +629,12 @@ public class AlignWindow extends javax.swing.JFrame implements ClipboardListener
                 jRadioButtonConsoleActionPerformed(evt);
             }
         });
-
         jPanelConsole.add(jRadioButtonConsole, java.awt.BorderLayout.NORTH);
 
         jScrollPaneConsole.setPreferredSize(new java.awt.Dimension(400, 50));
+
         jTextPaneConsole.setEditable(false);
-        jTextPaneConsole.addFocusListener(new java.awt.event.FocusAdapter() {
-            public void focusGained(java.awt.event.FocusEvent evt) {
-                jTextPaneConsoleFocusGained(evt);
-            }
-        });
+        jTextPaneConsole.setFont(new java.awt.Font("Courier", 0, 12)); // NOI18N
         jTextPaneConsole.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jTextPaneConsoleMouseClicked(evt);
@@ -666,7 +645,11 @@ public class AlignWindow extends javax.swing.JFrame implements ClipboardListener
                 jTextPaneConsoleCaretUpdate(evt);
             }
         });
-
+        jTextPaneConsole.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                jTextPaneConsoleFocusGained(evt);
+            }
+        });
         jScrollPaneConsole.setViewportView(jTextPaneConsole);
 
         jPanelConsole.add(jScrollPaneConsole, java.awt.BorderLayout.CENTER);
@@ -675,9 +658,9 @@ public class AlignWindow extends javax.swing.JFrame implements ClipboardListener
 
         getContentPane().add(jSplitPaneBody, java.awt.BorderLayout.CENTER);
 
+        jPanelControls.setAutoscrolls(true);
         jPanelControls.setLayout(new java.awt.GridLayout(1, 0));
 
-        jPanelControls.setAutoscrolls(true);
         jLabelScoringMatrix.setDisplayedMnemonic('M');
         jLabelScoringMatrix.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelScoringMatrix.setLabelFor(jComboBoxScoringMatrix);
@@ -720,7 +703,6 @@ public class AlignWindow extends javax.swing.JFrame implements ClipboardListener
         jPanelOutputFormat.add(jLabelOutputFormat);
 
         jComboBoxOutputFormat.setToolTipText("Alignment output format");
-        jComboBoxOutputFormat.setOpaque(false);
         jPanelOutputFormat.add(jComboBoxOutputFormat);
 
         jPanelControls.add(jPanelOutputFormat);
@@ -732,7 +714,6 @@ public class AlignWindow extends javax.swing.JFrame implements ClipboardListener
                 jButtonGoActionPerformed(evt);
             }
         });
-
         jPanelGo.add(jButtonGo);
 
         jPanelControls.add(jPanelGo);
@@ -741,6 +722,7 @@ public class AlignWindow extends javax.swing.JFrame implements ClipboardListener
 
         jMenuFile.setMnemonic('F');
         jMenuFile.setText("File");
+
         jMenuItemFileOpen.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_O, java.awt.event.InputEvent.CTRL_MASK));
         jMenuItemFileOpen.setIcon(ToolbarIcons.OPEN);
         jMenuItemFileOpen.setMnemonic('O');
@@ -750,7 +732,6 @@ public class AlignWindow extends javax.swing.JFrame implements ClipboardListener
                 jMenuItemFileOpenActionPerformed(evt);
             }
         });
-
         jMenuFile.add(jMenuItemFileOpen);
 
         jMenuItemFileLoadSequence1.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_1, java.awt.event.InputEvent.CTRL_MASK));
@@ -762,7 +743,6 @@ public class AlignWindow extends javax.swing.JFrame implements ClipboardListener
                 jMenuItemFileLoadSequence1ActionPerformed(evt);
             }
         });
-
         jMenuFile.add(jMenuItemFileLoadSequence1);
 
         jMenuItemFileLoadSequence2.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_2, java.awt.event.InputEvent.CTRL_MASK));
@@ -774,7 +754,6 @@ public class AlignWindow extends javax.swing.JFrame implements ClipboardListener
                 jMenuItemFileLoadSequence2ActionPerformed(evt);
             }
         });
-
         jMenuFile.add(jMenuItemFileLoadSequence2);
 
         jMenuItemFileLoadMatrix.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_M, java.awt.event.InputEvent.CTRL_MASK));
@@ -787,9 +766,7 @@ public class AlignWindow extends javax.swing.JFrame implements ClipboardListener
                 jMenuItemFileLoadMatrixActionPerformed(evt);
             }
         });
-
         jMenuFile.add(jMenuItemFileLoadMatrix);
-
         jMenuFile.add(jSeparatorFile);
 
         jMenuItemFileExit.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_X, java.awt.event.InputEvent.ALT_MASK));
@@ -801,7 +778,6 @@ public class AlignWindow extends javax.swing.JFrame implements ClipboardListener
                 jMenuItemFileExitActionPerformed(evt);
             }
         });
-
         jMenuFile.add(jMenuItemFileExit);
 
         jMenuItemFilePrint.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_P, java.awt.event.InputEvent.CTRL_MASK));
@@ -812,13 +788,13 @@ public class AlignWindow extends javax.swing.JFrame implements ClipboardListener
                 jMenuItemFilePrintActionPerformed(evt);
             }
         });
-
         jMenuFile.add(jMenuItemFilePrint);
 
         jMenuBar.add(jMenuFile);
 
         jMenuEdit.setMnemonic('E');
         jMenuEdit.setText("Edit");
+
         jMenuItemEditCut.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_X, java.awt.event.InputEvent.CTRL_MASK));
         jMenuItemEditCut.setIcon(ToolbarIcons.CUT);
         jMenuItemEditCut.setMnemonic('t');
@@ -828,7 +804,6 @@ public class AlignWindow extends javax.swing.JFrame implements ClipboardListener
                 jMenuItemEditCutActionPerformed(evt);
             }
         });
-
         jMenuEdit.add(jMenuItemEditCut);
 
         jMenuItemEditCopy.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_C, java.awt.event.InputEvent.CTRL_MASK));
@@ -840,7 +815,6 @@ public class AlignWindow extends javax.swing.JFrame implements ClipboardListener
                 jMenuItemEditCopyActionPerformed(evt);
             }
         });
-
         jMenuEdit.add(jMenuItemEditCopy);
 
         jMenuItemEditPaste.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_V, java.awt.event.InputEvent.CTRL_MASK));
@@ -852,7 +826,6 @@ public class AlignWindow extends javax.swing.JFrame implements ClipboardListener
                 jMenuItemEditPasteActionPerformed(evt);
             }
         });
-
         jMenuEdit.add(jMenuItemEditPaste);
 
         jMenuItemEditDelete.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_DELETE, 0));
@@ -864,7 +837,6 @@ public class AlignWindow extends javax.swing.JFrame implements ClipboardListener
                 jMenuItemEditDeleteActionPerformed(evt);
             }
         });
-
         jMenuEdit.add(jMenuItemEditDelete);
 
         jMenuItemEditSelectAll.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_A, java.awt.event.InputEvent.CTRL_MASK));
@@ -875,13 +847,13 @@ public class AlignWindow extends javax.swing.JFrame implements ClipboardListener
                 jMenuItemEditSelectAllActionPerformed(evt);
             }
         });
-
         jMenuEdit.add(jMenuItemEditSelectAll);
 
         jMenuBar.add(jMenuEdit);
 
         jMenuTools.setMnemonic('T');
         jMenuTools.setText("Tools");
+
         jMenuItemToolsRunExample.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F5, 0));
         jMenuItemToolsRunExample.setMnemonic('E');
         jMenuItemToolsRunExample.setText("Example");
@@ -891,13 +863,13 @@ public class AlignWindow extends javax.swing.JFrame implements ClipboardListener
                 jMenuItemToolsRunExampleActionPerformed(evt);
             }
         });
-
         jMenuTools.add(jMenuItemToolsRunExample);
 
         jMenuBar.add(jMenuTools);
 
         jMenuHelp.setMnemonic('H');
         jMenuHelp.setText("Help");
+
         jMenuItemAbout.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F1, 0));
         jMenuItemAbout.setIcon(ToolbarIcons.ABOUT);
         jMenuItemAbout.setMnemonic('A');
@@ -907,7 +879,6 @@ public class AlignWindow extends javax.swing.JFrame implements ClipboardListener
                 jMenuItemAboutActionPerformed(evt);
             }
         });
-
         jMenuHelp.add(jMenuItemAbout);
 
         jMenuBar.add(jMenuHelp);
@@ -915,7 +886,7 @@ public class AlignWindow extends javax.swing.JFrame implements ClipboardListener
         setJMenuBar(jMenuBar);
 
         pack();
-    }//GEN-END:initComponents
+    }// </editor-fold>//GEN-END:initComponents
 
     private void jPopupPrintActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jPopupPrintActionPerformed
         print();
