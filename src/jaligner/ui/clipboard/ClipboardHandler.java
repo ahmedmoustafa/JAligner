@@ -1,6 +1,4 @@
 /*
- * $Id: ClipboardHandler.java,v 1.1 2005/05/25 19:56:30 ahmed Exp $
- * 
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
  * as published by the Free Software Foundation; either version 2
@@ -22,7 +20,7 @@ package jaligner.ui.clipboard;
  * Abstract class to handle setting and getting "text" contents of
  * the system clipboard.
  * 
- * @author Ahmed Moustafa (ahmed@users.sf.net)
+ * @author Ahmed Moustafa
  */
 
 public interface ClipboardHandler {

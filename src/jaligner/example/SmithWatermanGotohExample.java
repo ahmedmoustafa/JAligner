@@ -1,6 +1,4 @@
 /*
- * $Id: SmithWatermanGotohExample.java,v 1.1 2006/02/03 03:46:18 ahmed Exp $
- *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
  * as published by the Free Software Foundation; either version 2
@@ -34,7 +32,7 @@ import java.util.logging.Logger;
  * Example of using JAligner API to align P53 human aganist
  * P53 mouse using Smith-Waterman-Gotoh algorithm.
  *
- * @author Ahmed Moustafa (ahmed@users.sf.net)
+ * @author Ahmed Moustafa
  */
 
 public class SmithWatermanGotohExample {

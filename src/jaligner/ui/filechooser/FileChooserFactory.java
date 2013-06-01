@@ -1,6 +1,4 @@
 /*
- * $Id: FileChooserFactory.java,v 1.1 2005/05/25 19:56:22 ahmed Exp $
- * 
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
  * as published by the Free Software Foundation; either version 2
@@ -23,7 +21,7 @@ import jaligner.util.Commons;
 /**
  * A factory for {@link jaligner.ui.filechooser.FileChooser}.
  * 
- * @author Ahmed Moustafa (ahmed@users.sf.net)
+ * @author Ahmed Moustafa
  */
 
 public class FileChooserFactory {

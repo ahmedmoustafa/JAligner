@@ -1,6 +1,4 @@
 /*
- * $Id: MatricesCompartor.java,v 1.1 2005/05/25 19:56:30 ahmed Exp $
- * 
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
  * as published by the Free Software Foundation; either version 2
@@ -23,18 +21,15 @@ import java.util.Comparator;
 /**
  * Comparator to sort the scoring matrices by their names. 
  * 
- * @author Ahmed Moustafa (ahmed@users.sf.net)
+ * @author Ahmed Moustafa
  */
 
-public class MatricesCompartor implements Comparator {
+public class MatricesCompartor implements Comparator<String> {
 
 	/* (non-Javadoc)
 	 * @see java.util.Comparator#compare(java.lang.Object, java.lang.Object)
 	 */
-	public int compare(Object o1, Object o2) {
-		String s1 = (String) o1;
-		String s2 = (String) o2;
-		
+	public int compare(String s1, String s2) {
 		int index1 = firstDigitIndex(s1);
 		int index2 = firstDigitIndex(s2);
 		

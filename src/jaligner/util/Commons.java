@@ -1,6 +1,4 @@
 /*
- * $Id: Commons.java,v 1.3 2006/07/27 16:28:24 ahmed Exp $
- * 
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
  * as published by the Free Software Foundation; either version 2
@@ -29,7 +27,7 @@ import java.util.logging.Logger;
 /**
  * Global constants/variables/settings
  * 
- * @author Ahmed Moustafa (ahmed@users.sf.net)
+ * @author Ahmed Moustafa
  */
 
 public abstract class Commons {
@@ -216,7 +214,6 @@ public abstract class Commons {
 	 * @return information about JAligner
 	 */
 	public static String getJAlignerInfo() {
-		return "JAligner - Build: " + getCurrentRelease()
-				+ " - By: Ahmed Moustafa (ahmed@users.sf.net)";
+		return "JAligner - Build: " + getCurrentRelease() + " - By: Ahmed Moustafa";
 	}
 }

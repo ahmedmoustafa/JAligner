@@ -1,6 +1,4 @@
 /*
- * @author Ahmed Moustafa (ahmed at users.sourceforge.net)
- * 
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
  * as published by the Free Software Foundation; either version 2
@@ -20,7 +18,7 @@ package jaligner.matrix;
 
 /**
  * 
- * @author Ahmed Moustafa (ahmed@users.sf.net)
+ * @author Ahmed Moustafa
  */
 
 public class MatrixLoaderException extends Exception {

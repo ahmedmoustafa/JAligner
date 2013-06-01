@@ -1,6 +1,4 @@
 /*
- * $Id: NeedlemanWunsch.java,v 1.4 2006/02/09 12:23:24 ahmed Exp $
- * 
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
  * as published by the Free Software Foundation; either version 2
@@ -30,7 +28,7 @@ import jaligner.matrix.Matrix;
  * Dynamic Programming Tutorial</a>.
  * 
  * 
- * @author <a href="ahmed@users.sf.net">Ahmed Moustafa</a>
+ * @author Ahmed Moustafa
  */
 
 public final class NeedlemanWunsch {

@@ -1,6 +1,4 @@
 /*
- * @author Ahmed Moustafa (ahmed at users.sourceforge.net)
- * 
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
  * as published by the Free Software Foundation; either version 2
@@ -32,13 +30,13 @@ import java.util.logging.Logger;
 /**
  * SequenceParser to sequences from different formats.
  * <br>
- * Currently the supported formats are:
+ * The supported formats are:
  * <ul>
- * <li>Plain sequence</li>
- * <li><a href="http://www.ncbi.nlm.nih.gov/BLAST/fasta.html">Sequence</a></li>
+ * <li>Plain sequence</li>, and
+ * <li><a href="http://en.wikipedia.org/wiki/FASTA_format">FASTA</a></li>
  * </ul>
  *
- * @author Ahmed Moustafa (ahmed@users.sf.net)
+ * @author Ahmed Moustafa
  */
 
 public class SequenceParser {

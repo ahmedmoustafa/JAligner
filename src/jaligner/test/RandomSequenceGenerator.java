@@ -1,6 +1,4 @@
 /*
- * $Id: RandomSequenceGenerator.java,v 1.3 2006/02/03 05:00:22 ahmed Exp $
- * 
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
  * as published by the Free Software Foundation; either version 2

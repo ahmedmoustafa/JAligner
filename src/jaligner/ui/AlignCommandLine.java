@@ -1,6 +1,4 @@
 /*
- * $Id: AlignCommandLine.java,v 1.2 2009/03/10 15:10:46 ahmed Exp $
- * 
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
  * as published by the Free Software Foundation; either version 2
@@ -34,7 +32,7 @@ import java.util.logging.Logger;
 /**
  * Command line interface for JAligner.
  * 
- * @author Ahmed Moustafa (ahmed@users.sf.net)
+ * @author Ahmed Moustafa
  */
 public class AlignCommandLine {
 	

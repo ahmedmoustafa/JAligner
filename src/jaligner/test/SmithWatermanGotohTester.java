@@ -1,6 +1,4 @@
 /*
- * $Id: SmithWatermanGotohTester.java,v 1.1 2006/02/03 05:00:22 ahmed Exp $
- * 
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
  * as published by the Free Software Foundation; either version 2
@@ -28,6 +26,7 @@ import jaligner.matrix.MatrixLoader;
 
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.List;
 import java.util.Random;
 
 /**
@@ -46,8 +45,8 @@ public class SmithWatermanGotohTester {
         Format format = new Pair();
 
         try {
-            ArrayList matrices = new ArrayList();
-            for (Iterator i = MatrixLoader.list().iterator(); i.hasNext();) {
+            List<String> matrices = new ArrayList<String>();
+            for (Iterator<String> i = MatrixLoader.list().iterator(); i.hasNext();) {
                 matrices.add(i.next());
             }
             int countOfMatrices = matrices.size();

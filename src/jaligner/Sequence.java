@@ -1,6 +1,4 @@
 /*
- * $Id: Sequence.java,v 1.6 2006/07/27 16:28:24 ahmed Exp $
- * 
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
  * as published by the Free Software Foundation; either version 2
@@ -26,7 +24,7 @@ import java.io.Serializable;
  * A basic (nucleic or protein) sequence. It's a wrapper to
  * {@link java.lang.String}.
  * 
- * @author Ahmed Moustafa (ahmed@users.sf.net)
+ * @author Ahmed Moustafa
  */
 
 public class Sequence implements Serializable {

@@ -1,6 +1,4 @@
 /*
- * $Id: SmithWatermanGotoh.java,v 1.10 2006/02/09 13:27:36 ahmed Exp $
- * 
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
  * as published by the Free Software Foundation; either version 2
@@ -46,7 +44,7 @@ import java.util.logging.Logger;
  * </ul>
  * </ul> 
  * 
- * @author Ahmed Moustafa (ahmed@users.sf.net)
+ * @author Ahmed Moustafa
  */
 
 public final class SmithWatermanGotoh {

@@ -9,7 +9,7 @@
 		<mkdir dir="${build.dir}" />
 	</target>
 	<target name="compile" depends="init" description="Compile source code">
-		<javac srcdir="${src.dir}" destdir="${build.dir}" debug="${debug}" optimize="${optimize}" deprecation="${deprecation}" classpath="${class.path}">
+		<javac srcdir="${src.dir}" destdir="${build.dir}" debug="${debug}" optimize="${optimize}" deprecation="${deprecation}" classpath="${class.path}" includeantruntime="false">
 			<include name="**/*.java" />
 		</javac>
 	</target>

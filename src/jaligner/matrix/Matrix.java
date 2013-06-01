@@ -1,6 +1,4 @@
 /*
- * $Id: Matrix.java,v 1.2 2006/01/18 20:16:37 ahmed Exp $
- * 
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
  * as published by the Free Software Foundation; either version 2
@@ -23,7 +21,7 @@ import java.io.Serializable;
 /**
  * Scoring matrix.
  * 
- * @author Ahmed Moustafa (ahmed@users.sf.net)
+ * @author Ahmed Moustafa
  */
 
 public class Matrix implements Serializable {

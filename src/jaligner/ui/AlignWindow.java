@@ -1,6 +1,4 @@
 /*
- * $Id: AlignWindow.java,v 1.2 2006/02/03 03:46:48 ahmed Exp $
- *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
  * as published by the Free Software Foundation; either version 2
@@ -70,7 +68,7 @@ import javax.swing.text.JTextComponent;
 /**
  * Graphical user inteface for JAligner.
  *
- * @author Ahmed Moustafa (ahmed@users.sf.net)
+ * @author Ahmed Moustafa
  */
 
 public class AlignWindow extends javax.swing.JFrame implements ClipboardListener, DocumentListener {
@@ -117,7 +115,7 @@ public class AlignWindow extends javax.swing.JFrame implements ClipboardListener
     /**
      * Loaded scoring matrices
      */
-    private HashMap matrices = new HashMap();
+    private HashMap<String, Matrix> matrices = new HashMap<String, Matrix>();
     
     /**
      * Current text component
@@ -173,7 +171,7 @@ public class AlignWindow extends javax.swing.JFrame implements ClipboardListener
         jFormattedTextFieldGapOpen.setValue(new Float(DEFAULT_OPEN_GAP_PENALTY));
         jFormattedTextFieldGapExtend.setValue(new Float(DEFAULT_EXTEND_GAP_PENALTY));
         
-        Collection matrices = null;
+        Collection<String> matrices = null;
         try {
             matrices = MatrixLoader.list(false);
         } catch (Exception e) {
@@ -187,11 +185,11 @@ public class AlignWindow extends javax.swing.JFrame implements ClipboardListener
         FormatFactory.getInstance().registerFormat(new Pair());
         FormatFactory.getInstance().registerFormat(new FASTA());
         
-        Collection formats = FormatFactory.getInstance().getFormats();
+        Collection<String> formats = FormatFactory.getInstance().getFormats();
         String[] outputFormats = new String[formats.size()];
-        Iterator i = formats.iterator();
+        Iterator<String> i = formats.iterator();
         for (int j = 0; i.hasNext(); j++) {
-            outputFormats[j] = (String) i.next();
+            outputFormats[j] = i.next();
         }
         populateComboBox(jComboBoxOutputFormat, outputFormats, null);
         
@@ -414,7 +412,7 @@ public class AlignWindow extends javax.swing.JFrame implements ClipboardListener
         jPopup.add(jPopupSelectAll);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
-        setTitle("JAligner - biological pairwise sequence alignment <http://jaligner.sf.net>");
+        setTitle("JAligner - biological sequence alignment <https://github.com/ahmedmoustafa/JAligner>");
         setName("AlignWindow");
         addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowClosing(java.awt.event.WindowEvent evt) {
@@ -1170,9 +1168,9 @@ public class AlignWindow extends javax.swing.JFrame implements ClipboardListener
     }//GEN-LAST:event_jTextAreaSequence1MouseClicked
     
     private void jMenuItemAboutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemAboutActionPerformed
-        String message = "JAligner <http://jaligner.sf.net>"
+        String message = "JAligner"
                 + Commons.getLineSeparator() + Commons.getLineSeparator()
-                + "Open source Java implementation"
+                + "open-source Java implementation"
                 + Commons.getLineSeparator()
                 + "of the Smith-Waterman algorithm"
                 + Commons.getLineSeparator()
@@ -1180,7 +1178,10 @@ public class AlignWindow extends javax.swing.JFrame implements ClipboardListener
                 + Commons.getLineSeparator() + Commons.getLineSeparator()
                 + "Build: " + Commons.getCurrentRelease()
                 + Commons.getLineSeparator() + Commons.getLineSeparator()
-                + "By: Ahmed Moustafa <ahmed@users.sf.net>";
+                + "By: Ahmed Moustafa"
+                + Commons.getLineSeparator() + Commons.getLineSeparator()
+                + "https://github.com/ahmedmoustafa/JAligner";
+                
         JOptionPane.showMessageDialog(this, message, "About JAligner",
                 JOptionPane.INFORMATION_MESSAGE);
     }//GEN-LAST:event_jMenuItemAboutActionPerformed
@@ -1300,9 +1301,9 @@ public class AlignWindow extends javax.swing.JFrame implements ClipboardListener
      * @param items array of strings to be added to the combobox
      * @param selected the default selected item
      */
-    private void populateComboBox(JComboBox combobox, Collection items, String selected) {
+    private void populateComboBox(JComboBox combobox, Collection<String> items, String selected) {
         String item;
-        Iterator i = items.iterator();
+        Iterator<String> i = items.iterator();
         int index = 0;
         while (i.hasNext()) {
             item = (String) i.next();
@@ -1577,7 +1578,7 @@ public class AlignWindow extends javax.swing.JFrame implements ClipboardListener
         setPrintControlsEnabled(enabled);
         
         // Adjust background of the radio buttons 
-        Enumeration buttons = buttonGroupSequences.getElements();
+        Enumeration<AbstractButton> buttons = buttonGroupSequences.getElements();
         AbstractButton button = null;
         while (buttons.hasMoreElements()) {
             button = (AbstractButton) buttons.nextElement();

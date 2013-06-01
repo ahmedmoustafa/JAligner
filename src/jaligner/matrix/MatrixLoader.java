@@ -1,6 +1,4 @@
 /*
- * $Id: MatrixLoader.java,v 1.3 2006/01/18 20:16:37 ahmed Exp $
- * 
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
  * as published by the Free Software Foundation; either version 2
@@ -33,6 +31,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.Enumeration;
+import java.util.List;
 import java.util.StringTokenizer;
 import java.util.jar.JarEntry;
 import java.util.jar.JarFile;
@@ -42,7 +41,7 @@ import java.util.logging.Logger;
 /**
  * Scoring matrices loader from a jar file or a file system.
  * 
- * @author Ahmed Moustafa (ahmed@users.sf.net)
+ * @author Ahmed Moustafa
  */
 
 public class MatrixLoader {
@@ -172,9 +171,9 @@ public class MatrixLoader {
 	 * @return sorted array of scoring matrices
 	 * @throws MatrixLoaderException
 	 */
-	public static Collection list(boolean sort) throws MatrixLoaderException {
+	public static Collection<String> list(boolean sort) throws MatrixLoaderException {
 		logger.info("Loading list of scoring matrices...");
-		ArrayList matrices = new ArrayList();
+		List<String> matrices = new ArrayList<String>();
 		URL url = MatrixLoader.class.getClassLoader()
 				.getResource(MATRICES_HOME);
 		if (url.getFile().toString().indexOf("!") != -1) {
@@ -190,12 +189,12 @@ public class MatrixLoader {
 				logger.log(Level.SEVERE, message, e);
 				throw new MatrixLoaderException(message);
 			}
-			Enumeration entries = jar.entries();
+			Enumeration<JarEntry> entries = jar.entries();
 			JarEntry entry;
 			String entryName;
 			int length = MATRICES_HOME.length();
 			while (entries.hasMoreElements()) {
-				entry = (JarEntry) entries.nextElement();
+				entry = entries.nextElement();
 				if (!entry.isDirectory()) {
 					entryName = entry.getName();
 					if (entryName.startsWith(MATRICES_HOME)) {
@@ -237,7 +236,7 @@ public class MatrixLoader {
 	 * @return sorted array of scoring matrices
 	 * @throws MatrixLoaderException
 	 */
-	public static Collection list() throws MatrixLoaderException {
+	public static Collection<String> list() throws MatrixLoaderException {
 		return list(false);
 	}
 }

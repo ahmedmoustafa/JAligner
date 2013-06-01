@@ -1,6 +1,4 @@
 /*
- * $Id: Alignment.java,v 1.11 2006/08/19 00:42:35 ahmed Exp $
- * 
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
  * as published by the Free Software Foundation; either version 2
@@ -26,7 +24,7 @@ import java.text.DecimalFormat;
 /**
  * Holds the output of a pairwise sequences alignment.
  * 
- * @author Ahmed Moustafa (ahmed@users.sf.net)
+ * @author Ahmed Moustafa
  */
 
 public final class Alignment {

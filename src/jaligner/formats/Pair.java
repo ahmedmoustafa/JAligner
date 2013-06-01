@@ -1,6 +1,4 @@
 /*
- * $Id: Pair.java,v 1.1 2005/05/25 19:56:30 ahmed Exp $
- * 
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
  * as published by the Free Software Foundation; either version 2
@@ -22,9 +20,9 @@ import jaligner.Alignment;
 import jaligner.util.Commons;
 
 /**
- * <a href="http://www.hgmp.mrc.ac.uk/Software/EMBOSS/Themes/AlignExamples/align.pair">Pair</a> format.
+ * <a href="http://emboss.sourceforge.net/docs/themes/AlignFormats.html">Alignment Formats</a>.
  *
- * @author Ahmed Moustafa (ahmed@users.sf.net)
+ * @author Ahmed Moustafa
  */
 
 public class Pair extends Format {

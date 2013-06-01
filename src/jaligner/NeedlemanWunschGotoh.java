@@ -1,6 +1,4 @@
 /*
- * $Id: NeedlemanWunschGotoh.java,v 1.12 2006/04/05 00:18:30 ahmed Exp $
- * 
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
  * as published by the Free Software Foundation; either version 2
@@ -27,7 +25,6 @@ import java.util.logging.Logger;
  * 
  * @author Ahmed Moustafa
  * @author Bram Minnaert
- * @version $Revision: 1.12 $
  */
 
 public final class NeedlemanWunschGotoh {
