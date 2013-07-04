@@ -89,11 +89,11 @@ public final class NeedlemanWunschGotoh {
 		// Initializes the boundaries of the traceback matrix.
 		for (int i = 1, k = n; i < m; i++, k += n) {
 			pointers[k] = Directions.UP;
-			lengths[k] = (short) i;
+			lengths[k] = i;
 		}
 		for (int j = 1; j < n; j++) {
 			pointers[j] = Directions.LEFT;
-			lengths[j] = (short) j;
+			lengths[j] = j;
 		}
 
 		Cell cell = construct(_s1, _s2, scores, o, e, pointers, lengths);
@@ -203,10 +203,10 @@ public final class NeedlemanWunschGotoh {
 					pointers[l] = Directions.DIAGONAL;
 				} else if (v[j] == g[j]) {
 					pointers[l] = Directions.UP;
-					lengths[l] = (short) lengthOfVerticalGap[j];
+					lengths[l] = lengthOfVerticalGap[j];
 				} else if (v[j] == h) {
 					pointers[l] = Directions.LEFT;
-					lengths[l] = (short) lengthOfHorizontalGap;
+					lengths[l] = lengthOfHorizontalGap;
 				}
 
 			} // loop columns
