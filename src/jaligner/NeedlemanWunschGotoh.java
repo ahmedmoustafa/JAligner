@@ -220,7 +220,7 @@ public final class NeedlemanWunschGotoh {
 		} // loop rows
 
 		Cell cell = new Cell();
-		cell.set(maxi, maxj, v[n - 1]);
+		cell.set(m-1, n-1, v[n - 1]);
 
 		logger.info("Finished.");
 
